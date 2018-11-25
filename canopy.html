@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+ <html>
+ <head>
+ <style>
+#div1 {
+     float: left;
+     width: 150px;
+     height: 50px;
+     margin: 10px;
+     padding: 10px;
+     border: 1px solid black;
+}
+#div2 {
+     float: left;
+     width: 150px;
+     height: 50px;
+     margin: 10px;
+     padding: 10px;
+     border: 1px solid black;
+}
+#container1 {
+    float: center;
+    width: 170px;
+    height: 200px;
+}
+
+</style>
+ <script>
+ function allowDrop(ev) {
+     ev.preventDefault();
+ }
+ 
+ function drag(ev) {
+     ev.dataTransfer.setData("text", ev.target.id);
+ }
+ 
+ function drop(ev) {
+     ev.preventDefault();
+     var data = ev.dataTransfer.getData("text");
+     ev.target.appendChild(document.getElementById(data));
+ }
+ </script>
+ 	
+ </head>
+ <body>
+ <center>
+ <h2>Activity 1: Base/Superstructure and Hegemony</h2>
+ <p>Drag the image back and forth between the two div elements.</p>
+ <div id="container1">
+    <img src="cultural.png" draggable="true" ondragstart="drag(event)" id="drag1" width="25" height="25" padding="12.5">
+    <img src="civic.png" draggable="true" ondragstart="drag(event)" id="drag1" width="25" height="25" padding="12.5">
+    <img src="material.png" draggable="true" ondragstart="drag(event)" id="drag1" width="25" height="25" padding="12.5">
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+</center>
+ </body>
+ </html>
