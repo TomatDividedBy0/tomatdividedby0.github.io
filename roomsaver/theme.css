@@ -1,0 +1,64 @@
+/* canvas styles */
+html, header
+{
+    float: top;
+    margin: 0;
+}
+#header
+{
+    background-color: #888888;
+}
+
+html, body
+{
+    font:normal normal normal 100%/1.4 tahoma, sans-serif;
+    color:#000;
+    margin: 0
+}
+body
+{
+    background-image: url("dots.svg");
+    background-color:#dddddd;
+}
+
+.container1 
+{
+    position: center;
+    width: 42%;
+    height: 16em;
+}
+
+/* draggable targets */
+[data-draggable="target"]
+{
+    list-style-type:none;
+    
+    width:21%;
+    height:7.5em;
+    overflow-y:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0.5em;
+    
+    border:2px solid #888;
+    
+    background: #dddddd;;
+    color:#555;
+}
+
+/* draggable items */
+[data-draggable="item"]
+{
+    display:block;
+    list-style-type:none;
+    
+    margin:0 0 2px 0;
+    padding:0.2em 0.4em;
+    
+    border-radius:0.2em;
+    
+    line-height:1.3;
+}
+
+
