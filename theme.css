@@ -18,10 +18,8 @@ html, body
     margin: 0
 }
 body{
-    background-color:#5e6374;
-    background-image: radial-gradient(#4f5461 40%, transparent 40%);
-    background-size:60px 60px;
-    background-position: 0 0, 30px 30px;
+    background: repeating-linear-gradient(145deg, #5e6374, #5e6374 10px, #4f5461 10px, #4f5461 20px);
+
 }
 
 .container1 
@@ -44,10 +42,9 @@ body{
     margin-right: auto;
     padding:0.5em;
     
-    border:2px solid #4f5461;
-    
-    background: #5e6374;
-    color:#4f5461;
+    border:2px solid #232425;
+    background-color: #4f5461;
+    color:#232425;
 }
 
 /* draggable items */
