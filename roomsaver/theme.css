@@ -6,19 +6,22 @@ html, header
 }
 #header
 {
-    background-color: #888888;
+    background-color: #232425;
+    color:#8A8A8B;
+    font-family:"Roboto";
 }
 
 html, body
 {
-    font:normal normal normal 100%/1.4 tahoma, sans-serif;
+    font-family:"Roboto";
     color:#000;
     margin: 0
 }
-body
-{
-    background-image: url("dots.svg");
-    background-color:#dddddd;
+body{
+    background-color:#5e6374;
+    background-image: radial-gradient(#4f5461 40%, transparent 40%);
+    background-size:60px 60px;
+    background-position: 0 0, 30px 30px;
 }
 
 .container1 
@@ -41,10 +44,10 @@ body
     margin-right: auto;
     padding:0.5em;
     
-    border:2px solid #888;
+    border:2px solid #4f5461;
     
-    background: #dddddd;;
-    color:#555;
+    background: #5e6374;
+    color:#4f5461;
 }
 
 /* draggable items */
@@ -53,11 +56,10 @@ body
     display:block;
     list-style-type:none;
     
-    margin:0 0 2px 0;
+    margin:0 0 7px 0;
     padding:0.2em 0.4em;
     
     border-radius:0.2em;
-    
     line-height:1.3;
 }
 
