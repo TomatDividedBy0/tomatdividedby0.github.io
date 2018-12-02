@@ -4,22 +4,25 @@ html, header
     float: top;
     margin: 0;
 }
+
 #header
 {
     background-color: #232425;
     color:#8A8A8B;
-    font-family:"Roboto";
+    font-family:sans-serif,serif;
+	justify-content:center;
 }
 
 html, body
 {
-    font-family:"Roboto";
+    font-family:sans-serif,serif;
     color:#000;
     margin: 0
 }
-body{
-    background: repeating-linear-gradient(145deg, #5e6374, #5e6374 10px, #4f5461 10px, #4f5461 20px);
 
+body
+{
+    background: repeating-linear-gradient(145deg, #5e6374, #5e6374 10px, #4f5461 10px, #4f5461 20px);
 }
 
 .container1 
@@ -27,6 +30,74 @@ body{
     position: center;
     width: 42%;
     height: 16em;
+}
+
+.boxShadow
+{
+	margin:25px;
+	color:#8A8A8B;
+	background-color:#232425;
+	box-shadow:2px 4px #000000;
+	opacity:0.9;
+	padding:1%;
+}
+
+.noselect{
+	box-shadow:1px 2px;
+	background-color:#232425;
+}
+
+#button
+{
+	background-color:#232425;
+	width:14%;
+	height:10%;
+	border:none;
+	float:center;
+	box-shadow:1px 2px #000000;
+	-webkit-appearance:none;
+	position:fixed;
+	bottom:0px;
+	left:43%;
+	border-radius:10px 10px 0px 0px;
+	color:#8A8A8B;
+}
+
+#leftButton
+{
+	background-color:#232425;
+	width:14%;
+	height:10%;
+	border:none;
+	float:center;
+	box-shadow:1px 2px #000000;
+	-webkit-appearance:none;
+	position:fixed;
+	bottom:0px;
+	border-radius:0px 10px 0px 0px;
+	color:#8A8A8B;
+}
+
+#rightButton
+{
+	background-color:#232425;
+	width:14%;
+	height:10%;
+	border:none;
+	float:right;
+	box-shadow:2px 1px #000000;
+	-webkit-appearance:none;
+	position:fixed;
+	bottom:0px;
+	border-radius:10px 0px 0px 0px;
+	right:0;
+	color:#8A8A8B;
+}
+
+#BaSS
+{
+	width:100%;
+	margin:0 auto;
 }
 
 /* draggable targets */
@@ -41,7 +112,6 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding:0.5em;
-    
     border:2px solid #232425;
     background-color: #4f5461;
     color:#232425;
